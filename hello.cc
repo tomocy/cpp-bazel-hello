@@ -1,8 +1,6 @@
+#include "hello.h"
+
 #include <iostream>
 #include <string>
 
-int main() {
-  std::cout << "Hello, bazel!" << std::endl;
-
-  return EXIT_SUCCESS;
-}
+void Greet(std::string name) { std::cout << "Hello, " << name << std::endl; }
