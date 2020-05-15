@@ -1,6 +1,7 @@
 #include <string>
 
-#include "hello.h"
+#include "main/hello.h"
+#include "time/time.h"
 
 int main(int c, char** vs) {
   auto name = std::string("bazel");
@@ -9,6 +10,7 @@ int main(int c, char** vs) {
   }
 
   Greet(name);
+  PrintLocalTime();
 
   return EXIT_SUCCESS;
 }
